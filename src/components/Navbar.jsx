@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { AiOutlineGlobal } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,8 +12,8 @@ const Navbar = () => {
             <img src={logo} alt="Logo" className="w-[80%] min-h-10" />
           </div>
           <div className="w-full lg:w-[40%] flex items-center justify-center gap-5">
-            <div className="nav_btn">HOME</div>
-            <div className="nav_btn">FEATURES</div>
+            <div className="nav_btn"><Link to="/">HOME</Link></div>
+            <div className="nav_btn"><Link to="/features">FEATURES</Link></div>
           </div>
           <div className="w-full lg:w-[30%] flex items-center justify-center lg:justify-end gap-5">
             <div className="nav_btn"><AiOutlineGlobal className="text-2xl"/></div>

@@ -4,15 +4,17 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Chat from "./components/Chat";
+import Features from "./pages/Features";
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Chat/>
-      <div className="w-full h-full px-2 md:px-5 lg:px-10">
+      <div className="w-full h-full">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/features" element={<Features />} />
         </Routes>
       </div>
       <Footer/>
