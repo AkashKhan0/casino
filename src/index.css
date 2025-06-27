@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: transparent;
+  background: url('./assets/black.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.nav_btn{
+    padding: 4px 15px;
+    border: 1px solid #1B7194;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #a2009a73;
+    transition: 0.3s all ease;
+}
+.nav_btn:hover {
+    background-color: #a2009ac2;
+    box-shadow: 0px 0px 20px #1B7194;
+}
+.boxs {
+    width: auto;
+    min-width: 150px;
+    height: 250px;
+}
+.boxss {
+    width: auto;
+    min-width: 150px;
+    max-width: 200px;
+    height: 200px;
+}
+.f_ttl {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.f_ttl_p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ddd;
+  cursor: pointer;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+.f_ttl_p:hover {
+  color: #c035b9;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.f_ttl2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+.f_ttl2_p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ddd;
+  margin: 8px 0;
+}
+.f_ttl2_i {
+  font-size: 26px;
+  font-weight: 500;
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid #c558c556;
+  border-radius: 6px;
+  padding: 6px;
+}
+.f_ttl2_i:hover {
+  color: #ff00ff56;
+  border: 1px solid #ffffff7a;
+}
+.ftr_bg_vdo {
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.chat {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1B7194;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.chat:hover {
+  background-color: #900089;
+}
