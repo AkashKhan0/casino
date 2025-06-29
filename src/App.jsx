@@ -1,23 +1,25 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 import Chat from "./components/Chat";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import Features from "./pages/Features";
+import Home from "./pages/Home";
+import Poker from "./pages/Poker";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Chat/>
+      <Chat />
       <div className="w-full h-full">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
+          <Route path="/poker" element={<Poker />} />
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
