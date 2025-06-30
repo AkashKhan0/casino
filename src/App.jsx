@@ -10,13 +10,10 @@ import Features from "./pages/Features";
 import Home from "./pages/Home";
 import Livecasino from "./pages/Livecasino";
 import Poker from "./pages/Poker";
-<<<<<<< HEAD
-=======
-import Termcondition from "./components/Termcondition";
-import Privecypolicy from "./components/Privecypolicy";
+
 import Validation from "./components/Validation";
 import Moneylaundering from "./components/Moneylaundering";
->>>>>>> 26c337f745e60eea89c4fe66beb1a608c1eca5cb
+
 
 const App = () => {
   return (
