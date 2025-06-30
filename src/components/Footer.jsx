@@ -27,7 +27,9 @@ const Footer = () => {
             <div className="f_ttl_p">
               <Link to="/Casino">Casino</Link>
             </div>
-            <div className="f_ttl_p">Live Casino</div>
+            <div className="f_ttl_p">
+              <Link to="/Livecasino">Live Casino</Link>
+            </div>
             <div className="f_ttl_p">Sports</div>
             <div className="f_ttl_p">Help</div>
           </div>
