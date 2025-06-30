@@ -3,12 +3,14 @@ import { Route, Routes } from "react-router-dom";
 import Chat from "./components/Chat";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Privecypolicy from "./components/Privecypolicy";
+import Termcondition from "./components/Termcondition";
 import Casino from "./pages/Casino";
 import Features from "./pages/Features";
 import Home from "./pages/Home";
+import Livecasino from "./pages/Livecasino";
 import Poker from "./pages/Poker";
-import Termcondition from "./components/Termcondition";
-import Privecypolicy from "./components/Privecypolicy";
+
 import Validation from "./components/Validation";
 import Moneylaundering from "./components/Moneylaundering";
 import Whoweare from "./components/Whoweare";
@@ -16,6 +18,7 @@ import Responsiblegaming from "./components/Responsiblegaming";
 import Gamerule from "./components/Gamerule";
 import Sportsrule from "./components/Sportsrule";
 import Glossary from "./components/Glossary";
+
 
 const App = () => {
   return (
@@ -28,6 +31,7 @@ const App = () => {
           <Route path="/features" element={<Features />} />
           <Route path="/poker" element={<Poker />} />
           <Route path="/casino" element={<Casino />} />
+          <Route path="/Livecasino" element={<Livecasino />} />
           <Route path="/termcondition" element={<Termcondition />} />
           <Route path="/privecypolicy" element={<Privecypolicy />} />
           <Route path="/validation" element={<Validation />} />
