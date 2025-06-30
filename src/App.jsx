@@ -7,6 +7,8 @@ import Casino from "./pages/Casino";
 import Features from "./pages/Features";
 import Home from "./pages/Home";
 import Poker from "./pages/Poker";
+import Termcondition from "./components/Termcondition";
+import Privecypolicy from "./components/Privecypolicy";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="/features" element={<Features />} />
           <Route path="/poker" element={<Poker />} />
           <Route path="/casino" element={<Casino />} />
+          <Route path="/termcondition" element={<Termcondition />} />
+          <Route path="/privecypolicy" element={<Privecypolicy />} />
         </Routes>
       </div>
       <Footer />
