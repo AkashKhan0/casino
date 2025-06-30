@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import ftrbg from '../assets/ftr_bg.mp4'
+import { Link } from 'react-router-dom';
   
 
 const Footer = () => {
@@ -28,8 +29,8 @@ const Footer = () => {
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Site Policies</div>
             <div className="f_ttl_p">Anti-Money Laundering</div>
-            <div className="f_ttl_p">Terms and Conditions</div>
-            <div className="f_ttl_p">Privacy Policy</div>
+            <div className="f_ttl_p"><Link to="/termcondition">Terms and Conditions</Link></div>
+            <div className="f_ttl_p"><Link to="/privecypolicy">Privacy Policy</Link></div>
             <div className="f_ttl_p">Bet Validation and Acceptance</div>
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">

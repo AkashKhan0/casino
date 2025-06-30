@@ -7,7 +7,7 @@ import box3 from "../assets/box1/box3.png";
 const Home = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-col lg:flex-row w-full justify-between gap-5 my-10">
+      <div className="px-2 md:px-5 lg:px-10 flex flex-col md:flex-col lg:flex-row w-full justify-between gap-5 my-10">
         <div className="w-full lg:w-[40%] min-h-[250px] rounded-md">
           <div className="w-full h-full">
             <AutoImageSlider />
@@ -42,7 +42,7 @@ const Home = () => {
         </div>
       </div>
 {/* first row */}
-      <div className="w-full h-full rounded-md">
+      <div className="w-full h-full px-2 md:px-5 lg:px-10 rounded-md">
           <div className="w-full h-auto pb-10">
             <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-4 items-center">
               <div className="boxss border-[#000169] border-2 rounded-md hover:cursor-pointer transition-shadow duration-300 hover:shadow-[0_0_20px_#000169]">
@@ -98,7 +98,7 @@ const Home = () => {
         </div>
 
 {/* second row */}
-      <div className="w-full h-full rounded-md">
+      <div className="w-full h-full px-2 md:px-5 lg:px-10 rounded-md">
           <div className="w-full h-auto pb-10">
             <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-4 items-center">
               <div className="boxss border-[#000169] border-2 rounded-md hover:cursor-pointer transition-shadow duration-300 hover:shadow-[0_0_20px_#000169]">
@@ -154,7 +154,7 @@ const Home = () => {
         </div>
 
 {/* thired row */}
-      <div className="w-full h-full rounded-md">
+      <div className="w-full px-2 md:px-5 lg:px-10 h-full rounded-md">
           <div className="w-full h-auto pb-10">
             <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-4 items-center">
               <div className="boxss border-[#000169] border-2 rounded-md hover:cursor-pointer transition-shadow duration-300 hover:shadow-[0_0_20px_#000169]">
