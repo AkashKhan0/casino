@@ -167,3 +167,14 @@ body {
 .trmcndn {
   backdrop-filter: blur(5px);
 }
+
+.forrm {
+  background-color: transparent;
+  background: url("./assets/form_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.form_inp {
+  border: 1px solid #330E3C;
+}

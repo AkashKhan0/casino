@@ -18,6 +18,8 @@ import Responsiblegaming from "./components/Responsiblegaming";
 import Gamerule from "./components/Gamerule";
 import Sportsrule from "./components/Sportsrule";
 import Glossary from "./components/Glossary";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 
 const App = () => {
@@ -42,6 +44,11 @@ const App = () => {
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/responsiblegaming" element={<Responsiblegaming />} />
           <Route path="/whoweare" element={<Whoweare />} />
+
+
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+
         </Routes>
       </div>
       <Footer />
