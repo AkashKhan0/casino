@@ -1,26 +1,27 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import ftrbg from '../assets/ftr_bg.mp4'
-import { Link } from 'react-router-dom';
   
 
 const Footer = () => {
   return (
     <div>
       <div className="w-full relative footer h-fit px-2 md:px-5 lg:px-10 py-5 bg-[#b600ad3f]">
-        <div className="absolute top-0 left-0 w-full h-full object-cover ftr_bg_vdo"><video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src={ftrbg}
-        autoPlay
-        loop
-        muted
-        playsInline
-      /></div>
+        <div className="absolute top-0 left-0 w-full h-full object-cover ftr_bg_vdo">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src={ftrbg}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Pages</div>
             <div className="f_ttl_p">Home</div>
-            <div className="f_ttl_p">Poker</div>
+            <div className="f_ttl_p"><Link to="/poker">Poker</Link></div>
             <div className="f_ttl_p">Casino</div>
             <div className="f_ttl_p">Live Casino</div>
             <div className="f_ttl_p">Sports</div>
@@ -86,6 +87,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;
