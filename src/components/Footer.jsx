@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 import React from "react";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ftrbg from "../assets/ftr_bg.mp4";
-=======
-import React from 'react'
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import ftrbg from '../assets/ftr_bg.mp4'
-  
->>>>>>> e46425da074d1c84a33fbcacde318fc1450a6a03
 
 const Footer = () => {
   return (
@@ -41,8 +34,12 @@ const Footer = () => {
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Site Policies</div>
             <div className="f_ttl_p">Anti-Money Laundering</div>
-            <div className="f_ttl_p"><Link to="/termcondition">Terms and Conditions</Link></div>
-            <div className="f_ttl_p"><Link to="/privecypolicy">Privacy Policy</Link></div>
+            <div className="f_ttl_p">
+              <Link to="/termcondition">Terms and Conditions</Link>
+            </div>
+            <div className="f_ttl_p">
+              <Link to="/privecypolicy">Privacy Policy</Link>
+            </div>
             <div className="f_ttl_p">Bet Validation and Acceptance</div>
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
