@@ -8,6 +8,7 @@ import Carouselpoker2 from "../assets/carouselpoker/buffeloking.png";
 import Carouselpoker5 from "../assets/carouselpoker/megaways.png";
 import Carouselpoker3 from "../assets/carouselpoker/olympus.png";
 import Carouselpoker4 from "../assets/carouselpoker/sweet.png";
+import { LuArrowBigLeft, LuArrowBigRight } from "react-icons/lu";
 
 const slides = [
   { id: 1, image: Carouselpoker1 },
@@ -68,7 +69,7 @@ const Carouselpoker = () => {
       </div>
 
       {/* Pagination Dots */}
-      <div className="flex justify-center gap-2 mt-4">
+      {/* <div className="flex justify-center gap-2 mt-4">
         {slides.map((_, idx) => (
           <button
             key={idx}
@@ -78,20 +79,20 @@ const Carouselpoker = () => {
             }`}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Navigation arrows */}
       <button
         onClick={() => instanceRef.current?.prev()}
-        className="absolute left-2 top-1/2 -translate-y-1/2 p-3 bg-gray-700 text-white rounded-full hover:bg-gray-900"
+        className="absolute left-0 top-1/2 -translate-y-1/2 p-2 bg-gray-700 text-white rounded-full hover:bg-gray-900"
       >
-        &larr;
+        <LuArrowBigLeft />
       </button>
       <button
         onClick={() => instanceRef.current?.next()}
-        className="absolute right-2 top-1/2 -translate-y-1/2 p-3 bg-gray-700 text-white rounded-full hover:bg-gray-900"
+        className="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-gray-700 text-white rounded-full hover:bg-gray-900"
       >
-        &rarr;
+       <LuArrowBigRight />
       </button>
     </div>
   );

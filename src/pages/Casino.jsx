@@ -174,28 +174,33 @@ const Casino = () => {
   return (
     <>
       <div className=" px-2 md:px-5 lg:px-10 mt-10 mb-10">
-        <div className="mb-10">
+        <div className="mb-10 w-full h-fit max-h-[400px] overflow-hidden rounded-md">
           <AutoImageSlider />
         </div>
-        <div className="min-h-screen p-8">
+        <div className="min-h-screen">
           {/* Search + Filters */}
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8 gap-4">
-            <input
-              type="text"
-              placeholder="Buscar"
-              className="px-4 py-2 rounded-full w-full md:w-1/3 bg-green-800 text-white placeholder:text-green-400 focus:outline-none"
-            />
-            <div className="flex gap-4">
-              <select className="px-4 py-2 rounded-full bg-green-800 text-white">
-                <option>Categorías</option>
-                <option>Slots</option>
-                <option>Live Casino</option>
-              </select>
-              <select className="px-4 py-2 rounded-full bg-green-800 text-white">
-                <option>Proveedores</option>
-                <option>Pragmatic Play</option>
-                <option>Ruby Play</option>
-              </select>
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8 gap-4 w-full">
+            <div className="w-full md:w-full lg:w-1/2 flex items-center justify-start">
+              <input
+                type="text"
+                placeholder="Buscar"
+                className="nav_btn w-full rounded-md outline-none"
+              />
+            </div>
+
+            <div className="w-full md:w-full lg:w-1/2 flex items-center justify-end gap-5">
+              <div className="flex gap-4">
+                <select className="px-4 nav_btn py-2 rounded-full text-white">
+                  <option>Categorías</option>
+                  <option>Slots</option>
+                  <option>Live Casino</option>
+                </select>
+                <select className="px-4 nav_btn py-2 rounded-full text-white">
+                  <option>Proveedores</option>
+                  <option>Pragmatic Play</option>
+                  <option>Ruby Play</option>
+                </select>
+              </div>
             </div>
           </div>
 

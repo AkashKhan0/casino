@@ -32,8 +32,6 @@ const Privecypolicy = () => {
 
         </div>
 
-          
-
       </div>
     </div>
   )

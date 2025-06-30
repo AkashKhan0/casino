@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Pages</div>
-            <div className="f_ttl_p">Home</div>
+            <div className="f_ttl_p"><Link to="/">Home</Link></div>
             <div className="f_ttl_p">
               <Link to="/poker">Poker</Link>
             </div>
@@ -33,14 +33,14 @@ const Footer = () => {
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Site Policies</div>
-            <div className="f_ttl_p">Anti-Money Laundering</div>
+            <div className="f_ttl_p"><Link to="/moneylaundering">Against Money Laundering</Link></div>
             <div className="f_ttl_p">
               <Link to="/termcondition">Terms and Conditions</Link>
             </div>
             <div className="f_ttl_p">
               <Link to="/privecypolicy">Privacy Policy</Link>
             </div>
-            <div className="f_ttl_p">Bet Validation and Acceptance</div>
+            <div className="f_ttl_p"><Link to="/validation">Validation and Acceptance of Bets</Link></div>
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Additional Information</div>
