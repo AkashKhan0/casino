@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Chat from "./components/Chat";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Casino from "./pages/Casino";
 import Features from "./pages/Features";
 import Home from "./pages/Home";
 import Poker from "./pages/Poker";
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
           <Route path="/poker" element={<Poker />} />
+          <Route path="/casino" element={<Casino />} />
         </Routes>
       </div>
       <Footer />

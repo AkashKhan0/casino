@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import ftrbg from "../assets/ftr_bg.mp4";
 import { Link } from "react-router-dom";
+import ftrbg from "../assets/ftr_bg.mp4";
 
 const Footer = () => {
   return (
@@ -21,8 +21,12 @@ const Footer = () => {
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Pages</div>
             <div className="f_ttl_p">Home</div>
-            <div className="f_ttl_p"><Link to="/poker">Poker</Link></div>
-            <div className="f_ttl_p">Casino</div>
+            <div className="f_ttl_p">
+              <Link to="/poker">Poker</Link>
+            </div>
+            <div className="f_ttl_p">
+              <Link to="/Casino">Casino</Link>
+            </div>
             <div className="f_ttl_p">Live Casino</div>
             <div className="f_ttl_p">Sports</div>
             <div className="f_ttl_p">Help</div>

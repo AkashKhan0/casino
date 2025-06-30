@@ -1,4 +1,3 @@
-"use client";
 import { motion } from "framer-motion";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
@@ -21,11 +20,25 @@ const CarouselMulti = () => {
 
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
+    drag: true,
     slides: {
       perView: 4,
       spacing: 16,
     },
-    drag: true,
+    breakpoints: {
+      "(max-width: 1024px)": {
+        slides: {
+          perView: 2,
+          spacing: 16,
+        },
+      },
+      "(max-width: 640px)": {
+        slides: {
+          perView: 1,
+          spacing: 8,
+        },
+      },
+    },
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel);
     },
