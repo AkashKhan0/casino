@@ -44,15 +44,15 @@ const Footer = () => {
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Additional Information</div>
-            <div className="f_ttl_p">Sports Rules</div>
-            <div className="f_ttl_p">Game Rules</div>
-            <div className="f_ttl_p">Betting Glossary</div>
-            <div className="f_ttl_p">Responsible Gaming</div>
+            <div className="f_ttl_p"><Link to="/sportsrule">Sports Rules</Link></div>
+            <div className="f_ttl_p"><Link to="/gamerule">Game Rules</Link></div>
+            <div className="f_ttl_p"><Link to="/glossary">Betting Glossary</Link></div>
+            <div className="f_ttl_p"><Link to="/responsiblegaming">Responsible Gaming</Link></div>
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Playbet</div>
 
-            <div className="f_ttl_p">About Us</div>
+            <div className="f_ttl_p"><Link to="/whoweare">Who We Are</Link></div>
           </div>
         </div>
 

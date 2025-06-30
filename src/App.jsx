@@ -11,6 +11,11 @@ import Termcondition from "./components/Termcondition";
 import Privecypolicy from "./components/Privecypolicy";
 import Validation from "./components/Validation";
 import Moneylaundering from "./components/Moneylaundering";
+import Whoweare from "./components/Whoweare";
+import Responsiblegaming from "./components/Responsiblegaming";
+import Gamerule from "./components/Gamerule";
+import Sportsrule from "./components/Sportsrule";
+import Glossary from "./components/Glossary";
 
 const App = () => {
   return (
@@ -27,6 +32,12 @@ const App = () => {
           <Route path="/privecypolicy" element={<Privecypolicy />} />
           <Route path="/validation" element={<Validation />} />
           <Route path="/moneylaundering" element={<Moneylaundering />} />
+
+          <Route path="/sportsrule" element={<Sportsrule />} />
+          <Route path="/gamerule" element={<Gamerule />} />
+          <Route path="/glossary" element={<Glossary />} />
+          <Route path="/responsiblegaming" element={<Responsiblegaming />} />
+          <Route path="/whoweare" element={<Whoweare />} />
         </Routes>
       </div>
       <Footer />
