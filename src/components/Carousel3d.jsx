@@ -7,6 +7,7 @@ import carousel1 from "../assets/carousel3d/alpha.png";
 import carousel2 from "../assets/carousel3d/dragons.png";
 import carousel4 from "../assets/carousel3d/feal.png";
 import carousel3 from "../assets/carousel3d/pilinko.png";
+import { LuArrowBigLeft, LuArrowBigRight } from "react-icons/lu";
 
 const slides = [
   { id: 1, image: carousel1 },
@@ -46,7 +47,7 @@ const CarouselMulti = () => {
       // autoplay
       setInterval(() => {
         slider.next();
-      }, 3000);
+      }, 5000);
     },
   });
 
@@ -73,31 +74,19 @@ const CarouselMulti = () => {
       {/* Prev Button */}
       <button
         onClick={() => instanceRef.current?.prev()}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-gray-700"
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-gray-700"
       >
-        &larr;
+        <LuArrowBigLeft />
       </button>
 
       {/* Next Button */}
       <button
         onClick={() => instanceRef.current?.next()}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-gray-700"
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-gray-700"
       >
-        &rarr;
+        <LuArrowBigRight />
       </button>
 
-      {/* Pagination Dots */}
-      <div className="flex justify-center mt-4 gap-2">
-        {slides.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => instanceRef.current?.moveToIdx(idx)}
-            className={`w-3 h-3 rounded-full ${
-              currentSlide === idx ? "bg-blue-500" : "bg-gray-300"
-            }`}
-          ></button>
-        ))}
-      </div>
     </div>
   );
 };

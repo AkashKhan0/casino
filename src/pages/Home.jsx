@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <div className="px-2 md:px-5 lg:px-10 flex flex-col md:flex-col lg:flex-row w-full justify-between gap-5 my-10">
         <div className="w-full lg:w-[40%] min-h-[250px] rounded-md">
-          <div className="w-full h-full">
+          <div className="w-full h-[250px]">
             <AutoImageSlider />
           </div>
         </div>

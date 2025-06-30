@@ -21,7 +21,7 @@ const AutoImageSlider = () => {
         <img
           src={images[currentIndex]}
           alt="Slider"
-          className="w-full h-[250px] object-cover transition-all duration-700"
+          className="w-full h-full min-h-[250px] object-fill transition-all duration-700"
         />
       </div>
     </div>

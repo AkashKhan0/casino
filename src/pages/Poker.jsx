@@ -10,7 +10,7 @@ const Poker = () => {
   return (
     <>
       <div className=" px-2 md:px-5 lg:px-10 mt-10 mb-10">
-        <div className="mb-10">
+        <div className="mb-10 w-full h-fit max-h-[400px] overflow-hidden rounded-md">
           <AutoImageSlider />
         </div>
 
