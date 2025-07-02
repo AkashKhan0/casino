@@ -31,7 +31,7 @@ const Footer = () => {
               <Link to="/Livecasino">Live Casino</Link>
             </div>
             <div className="f_ttl_p">Sports</div>
-            <div className="f_ttl_p">Help</div>
+            <div className="f_ttl_p"><Link to="/features">Help</Link></div>
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
             <div className="f_ttl">Site Policies</div>

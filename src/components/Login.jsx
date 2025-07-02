@@ -1,7 +1,9 @@
-import React from "react";
-import { BiShow } from "react-icons/bi";
+import React, { useState } from "react";
+import { BiHide, BiShow } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div>
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto">
@@ -10,28 +12,41 @@ const Login = () => {
             <form
               action=""
               autocomplete="off"
-              className="backdrop-blur-[5px] p-5 bg-transparent flex flex-col gap-5"
+              className="backdrop-blur-[3px] p-5 bg-transparent flex flex-col gap-5"
             >
-              <h1 className="uppercase text-2xl font-semibold">login</h1>
+              <h1 className="uppercase text-2xl font-semibold text-center">login</h1>
 
-              <div className="w-[200px] border px-2  rounded-md form_inp">
+              <div className="w-[250px] border px-2  rounded-md form_inp">
                 <input
                   type="text"
                   className="w-full py-1 outline-none bg-transparent"
                   placeholder="Username..."
-                  autoComplete="off"
+                  autoComplete="off" required
                 />
               </div>
-              <div className="w-[200px] border rounded-md flex items-center px-2 form_inp">
+
+              <div className="w-[250px] border rounded-md flex items-center px-2 form_inp">
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   autoComplete="off"
-                  placeholder="Password..."
+                  placeholder="Password..."  required
                   className="w-full py-1 outline-none bg-transparent"
                 />
-                <BiShow className="cursor-pointer text-xl text-[#330E3C]" />
+
+                <div
+                  className=""
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? (
+                    <BiHide className="cursor-pointer text-xl text-[#330E3C]" />
+                  ) : (
+                    <BiShow className="cursor-pointer text-xl text-[#330E3C]" />
+                  )}
+                </div>
               </div>
               <button className="nav_btn">Log in</button>
+
+              <p className="text-center"><Link to="/signup">Don't have an account? Sign up</Link></p>
             </form>
           </div>
         </div>
