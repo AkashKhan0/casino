@@ -11,16 +11,16 @@ import Home from "./pages/Home";
 import Livecasino from "./pages/Livecasino";
 import Poker from "./pages/Poker";
 
-import Validation from "./components/Validation";
-import Moneylaundering from "./components/Moneylaundering";
-import Whoweare from "./components/Whoweare";
-import Responsiblegaming from "./components/Responsiblegaming";
 import Gamerule from "./components/Gamerule";
-import Sportsrule from "./components/Sportsrule";
 import Glossary from "./components/Glossary";
-import Signup from "./components/Signup";
 import Login from "./components/Login";
-
+import Moneylaundering from "./components/Moneylaundering";
+import Responsiblegaming from "./components/Responsiblegaming";
+import Signup from "./components/Signup";
+import Sportsrule from "./components/Sportsrule";
+import Validation from "./components/Validation";
+import Whoweare from "./components/Whoweare";
+import Sports from "./pages/Sports";
 
 const App = () => {
   return (
@@ -34,6 +34,7 @@ const App = () => {
           <Route path="/poker" element={<Poker />} />
           <Route path="/casino" element={<Casino />} />
           <Route path="/Livecasino" element={<Livecasino />} />
+          <Route path="/Sports" element={<Sports />} />
           <Route path="/termcondition" element={<Termcondition />} />
           <Route path="/privecypolicy" element={<Privecypolicy />} />
           <Route path="/validation" element={<Validation />} />
@@ -45,10 +46,8 @@ const App = () => {
           <Route path="/responsiblegaming" element={<Responsiblegaming />} />
           <Route path="/whoweare" element={<Whoweare />} />
 
-
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-
         </Routes>
       </div>
       <Footer />
