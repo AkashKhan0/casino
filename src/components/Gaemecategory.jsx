@@ -1,13 +1,13 @@
+import { Link } from "react-router-dom";
 import GameCard from "./Gamecard";
+import StarButton from "./mini_components/StarButton";
 
 const GameCategory = ({ title, games }) => {
   return (
     <section className="mb-8">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold text-white">{title}</h2>
-        <button className="text-sm text-white border border-white rounded-full px-4 py-1 hover:bg-white hover:text-green-900 transition">
-          Todos
-        </button>
+        <h2 className="text-2xl font-bold text-[#FCBD00]">{title}</h2>
+        <Link to=""> <StarButton label="TODOS"/> </Link>
       </div>
       <div className="flex flex-wrap gap-4">
         {games.map((game) => (

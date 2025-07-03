@@ -184,18 +184,18 @@ const Casino = () => {
               <input
                 type="text"
                 placeholder="Buscar"
-                className="nav_btn w-full rounded-md outline-none"
+                className="w-full rounded-md outline-none bg-[#FCBD00] border-[#330e3c] border-2 px-3 py-1 text-[#330e3c] placeholder-[#590000]"
               />
             </div>
 
             <div className="w-full md:w-full lg:w-1/2 flex items-center justify-end gap-5">
               <div className="flex gap-4">
-                <select className="px-4 nav_btn py-2 rounded-full text-white">
+                <select className="px-4 bg-[#FCBD00] outline-none py-2 rounded-lg text-[#330e3c] border-[#330e3c] border-2">
                   <option>Categorías</option>
                   <option>Slots</option>
                   <option>Live Casino</option>
                 </select>
-                <select className="px-4 nav_btn py-2 rounded-full text-white">
+                <select className="px-4 bg-[#FCBD00] outline-none py-2 rounded-lg text-[#330e3c] border-[#330e3c] border-2">
                   <option>Proveedores</option>
                   <option>Pragmatic Play</option>
                   <option>Ruby Play</option>

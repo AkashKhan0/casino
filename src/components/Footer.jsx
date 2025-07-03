@@ -6,7 +6,7 @@ import ftrbg from "../assets/ftr_bg.mp4";
 const Footer = () => {
   return (
     <div>
-      <div className="w-full relative footer h-fit px-2 md:px-5 lg:px-10 py-5 bg-[#b600ad3f]">
+      <div className="w-full relative footer h-fit px-2 md:px-5 lg:px-10 py-5 bg-[#020202da]">
         <div className="absolute top-0 left-0 w-full h-full object-cover ftr_bg_vdo">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover"
@@ -77,7 +77,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-5" />
+        <div className="w-full h-[1px] bg-[#fcbd0041] my-5"></div>
         <div className="w-full flex flex-col md:flex-row lg:flex-row items-center justify-between gap-2">
           <div className="social_icn flex gap-5">
             <p className="f_ttl2_i">

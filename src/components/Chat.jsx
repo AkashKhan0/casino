@@ -51,7 +51,7 @@ const Chat = () => {
 
       {showField && (
         <div className="feild">
-          <h1 className='p-1 text-center text-xl font-semibold'>Customer support</h1>
+          <h1 className='p-1 text-center text-xl font-semibold text-[#fcbd00]'>Customer support</h1>
         <div className="flex flex-col">
           {/* Chat Messages */}
           <div className="overflow-y-scroll chat_fld p-2 space-y-2 h-[340px]">
@@ -60,7 +60,7 @@ const Chat = () => {
                 key={index}
                 className={`p-2 rounded-lg max-w-[80%] w-fit flex flex-col ${
                   msg.sender === "user"
-                    ? "bg-[#00013f] text-white ml-auto text-left"
+                    ? "bg-[#fcbd001c] text-white ml-auto text-left"
                     : "bg-gray-200"
                 }`}
               >
