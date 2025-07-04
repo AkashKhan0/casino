@@ -5,8 +5,8 @@ export default function RightSidebar() {
   const { bets, removeBet, totalOdds } = useBetSlip();
 
   return (
-    <aside className="w-72 bg-gray-800 p-4 flex flex-col">
-      <h2 className="text-xl font-bold mb-4">BET SLIP</h2>
+    <aside className="w-full h-full bg-gray-800 p-4 flex flex-col">
+      <h2 className="text-md mb-4">BET SLIP</h2>
 
       <div className="flex-1 space-y-3 overflow-y-auto">
         {bets.map((b) => (
@@ -29,7 +29,7 @@ export default function RightSidebar() {
       </div>
 
       <div className="mt-4">
-        <div className="flex justify-between text-lg">
+        <div className="flex justify-between text-md">
           <span>Total Cuotas</span>
           <span>{totalOdds.toFixed(2)}</span>
         </div>

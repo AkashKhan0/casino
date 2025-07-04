@@ -7,8 +7,8 @@ const sports = [
 
 export default function LeftSidebar() {
   return (
-    <aside className="w-64 bg-gray-800 p-4 overflow-auto">
-      <h2 className="text-xl font-bold mb-4">Competencia Popular</h2>
+    <aside className="w-full h-full bg-gray-800 p-4 overflow-auto">
+      <h2 className="text-md mb-4">Competencia Popular</h2>
       <ul className="space-y-2">
         {sports.map((s, i) => {
           <li
