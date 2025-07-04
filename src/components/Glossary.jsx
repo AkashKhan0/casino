@@ -6,7 +6,7 @@ const Glossary = () => {
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto trmcndn">
         <h1 className="grd_text py-5">BETTING GLOSSARY</h1>
 
-        <div className="mb-10">
+        <div className="pb-10">
           <div className="pvcplc_text">
             <p>
               Below are the different types of predictions available to users depending on the sport they wish to bet on. Soccer Soccer 1X2 The Player bets on the final result of the match. Bet: 1 - Description: The home team will win Bet: X - Description: Draw Bet: 2 - Description: The away team will win Double Chance You must predict the winner of the match by choosing one of the available options. Bet: 1X - Description: The home team will win the match or the result will be a draw Bet: 12 - Description: The home team or the away team will win the match Bet: X2 - Description: The away team will win the match or the result will be a draw. Double Chance – First Half You must predict the winner of the match by choosing one of the available options. Bet: 12 HT - Description: The home team or the away team will win the match in the first half. Bet: 1X HT - Description: The home team will win the match or the result will be a draw in the first half. Bet: X2 HT - Description: The away team will win the match or the result will be a draw in the first half. Double Chance – Second Half Predict which team will win the second half, with two out of three outcomes. Only goals scored in the second half will count. Bet: 12 ST - Description: The home team or the away team will win the match in the second half.

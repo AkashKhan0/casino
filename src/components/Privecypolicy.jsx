@@ -6,7 +6,7 @@ const Privecypolicy = () => {
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto trmcndn">
         <h1 className="grd_text py-5">PRIVACY POLICY</h1>
         
-        <div className="mb-10">
+        <div className="pb-10">
           <div className="pvcplc_ttl"><h1>General information</h1></div>
           <div className="pvcplc_text"><p>This Privacy Policy describes how www.play.bet.ar processes the information and data provided. The collection, processing, and use of player data is handled exclusively in accordance with applicable data protection regulations. www.play.bet.ar has taken the necessary technical and organizational measures to ensure that the collection, processing, and use of data are managed exclusively in accordance with current data protection regulations, both internally and by third-party service providers. By submitting Player information to www.play.bet.ar and using the Site, the Player confirms their consent to the use of their personal information as defined in this Privacy Policy. If the Player does not agree to the terms of this Privacy Policy, www.play.bet.ar recommends not creating a gaming account.</p></div>
 

@@ -6,7 +6,7 @@ const Moneylaundering = () => {
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto trmcndn">
         <h1 className="grd_text py-5">AGAINST MONEY LAUNDERING</h1>
         
-        <div className="mb-10">
+        <div className="pb-10">
           <div className="pvcplc_ttl"><h1>"MONEY LAUNDERING IS A SERIOUS CRIME PROSECUTED SEVERELY BY LAW"</h1></div>
           <div className="pvcplc_ttl"><h1>Football</h1></div>
           <div className="pvcplc_text"><p>In accordance with international guidelines for the prevention of money laundering, www.play.bet.ar will use all available means to identify any attempt at money laundering, participating, when necessary, in immediate communication with the competent authorities. Given that Directive 2001/97/EC on the prevention of the use of the financial system for the purpose of laundering the proceeds of illicit activities extends the scope of obligations regarding customer identification, data recording and storage, and reporting of suspicious transactions to those offering gambling, betting, or competitions with cash prizes via the Internet and other computer or telecommunications networks, the following provisions apply.</p></div>

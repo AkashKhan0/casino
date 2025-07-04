@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiHide, BiShow } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import StarButton from "./mini_components/StarButton";
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -8,18 +9,18 @@ const Signup = () => {
     <div>
           <div className="px-2 md:px-5 lg:px-10 w-full h-auto">
             <div className="w-full flex items-center justify-center p-5 mb-5">
-              <div className="w-[70%] min-w-[300px] max-w-[700px] h-fit min-h-[300px] rounded-md p-5 forrm flex flex-col items-end justify-center gap-3">
+              <div className="w-[70%] min-w-[300px] max-w-[700px] h-fit min-h-[300px] rounded-md p-5 forrm flex flex-col items-center justify-center gap-3">
                 <form
                   action=""
                   autocomplete="off"
-                  className="backdrop-blur-[3px] p-5 bg-transparent flex flex-col gap-5 w-1/2 min-w-[250px]"
+                  className="backdrop-blur-[3px] p-5  bg-[#000000b7] flex flex-col gap-5 w-[70%] min-w-[250px] rounded-lg"
                 >
-                  <h1 className="uppercase text-2xl font-semibold text-center">Sign Up</h1>
+                  <h1 className="uppercase text-2xl font-semibold text-center black_shadow">Sign Up</h1>
     
                   <div className="w-full border px-2  rounded-md form_inp">
                     <input
                       type="text"
-                      className="w-full py-1 outline-none bg-transparent"
+                      className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
                       placeholder="Username..."
                       autoComplete="off" required
                     />
@@ -30,7 +31,7 @@ const Signup = () => {
                       type={showPassword ? "text" : "password"}
                       autoComplete="off"
                       placeholder="Password..."
-                      className="w-full py-1 outline-none bg-transparent"
+                      className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
                     />
     
                     <div
@@ -49,7 +50,7 @@ const Signup = () => {
                   <div className="w-full border px-2  rounded-md form_inp">
                     <input
                       type="text"
-                      className="w-full py-1 outline-none bg-transparent"
+                      className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
                       placeholder="CUIL without spaces"
                       autoComplete="off" required
                     />
@@ -58,15 +59,15 @@ const Signup = () => {
                   <div className="w-full border px-2  rounded-md form_inp">
                     <input
                       type="number"
-                      className="w-full py-1 outline-none bg-transparent"
+                      className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
                       placeholder="Your phone number"
                       autoComplete="off" required
                     />
                   </div>
 
-                  <button className="nav_btn">Register</button>
+                  <button className="nav_btn"><StarButton label="registration"/></button>
     
-                  <p><Link to="/login">Already have an account? Sign in</Link></p>
+                  <p className="text-center text-[#FCBD00] black_shadow"><Link to="/login">Already have an account? Sign in</Link></p>
                 </form>
               </div>
             </div>

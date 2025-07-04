@@ -6,7 +6,7 @@ const Responsiblegaming = () => {
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto trmcndn">
         <h1 className="grd_text py-5">EU RESPONSIBLE:</h1>
 
-        <div className="mb-10">
+        <div className="pb-10">
           <div className="pvcplc_ttl">
             <h1>TIPS FOR PLAYERS</h1>
           </div>

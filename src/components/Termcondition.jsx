@@ -6,7 +6,7 @@ const Termcondition = () => {
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto trmcndn">
         <h1 className="grd_text py-5">TERMS AND CONDITIONS</h1>
         
-        <div className="mb-10">
+        <div className="pb-10">
           <div className="pvcplc_ttl"><h1>1.1 Terms of Use</h1></div>
           <div className="pvcplc_text"><p>Only adult users who have reached the age of eighteen may open an account and access the services of www.play.bet.ar. It is the Player's responsibility to comply with applicable laws before registering for the Application. In any case, if a player is determined to be underage, www.play.bet.ar will immediately suspend their account and take any appropriate measures. The player agrees to register their new gaming account at www.play.bet.ar by providing documented proof of age, identity, and address. The player MUST complete the registration form using real information and choosing their own username, password, PIN, and security answer. Upon registration, the player will receive an email containing the details entered during registration. The information provided during registration MUST be accurate and complete in all respects. The Player must keep the gaming account information secret and confidential, as the Player is responsible for all bets placed on the account and any other activity carried out. Furthermore, the player must do everything possible to prevent third parties from using his or her personal account.</p></div>
 

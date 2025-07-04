@@ -6,7 +6,7 @@ const Rportsrule = () => {
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto trmcndn">
         <h1 className="grd_text py-5">SPORTS RULES</h1>
 
-        <div className="mb-10">
+        <div className="pb-10">
           <div className="pvcplc_ttl">
             <h1>Football</h1>
           </div>

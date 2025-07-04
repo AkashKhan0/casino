@@ -161,7 +161,10 @@ body {
   font-weight: 600;
   color: #FCBD00;
   text-shadow: 4px 4px 0 #000000;
-
+}
+.black_shadow {
+  color: #FCBD00;
+  text-shadow: 4px 4px 0 #000000;
 }
 .pvcplc_text {
   font-size: 14px;
@@ -173,17 +176,23 @@ body {
 }
 .trmcndn {
   backdrop-filter: blur(5px);
+  background-color: #590000ea;
 }
 
 .forrm {
-  background-color: transparent;
-  background: url("./assets/form_bg.png");
+  /* background: url("./assets/blak.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center; */
 }
 .form_inp {
-  border: 1px solid #330e3c;
+  border: 2px solid #590000;
+  background-color: #FCBD00;
+  color: #590000;
+}
+.form_inp::placeholder {
+  color: #590000;
+  opacity: 1;
 }
 
 input[type="number"] {
@@ -214,7 +223,6 @@ input::-webkit-inner-spin-button {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 
 /* star button */
 .star-button {
