@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Madame from "../assets/Rubyplay/1_300x300.png";
 import Mayancache from "../assets/Rubyplay/501_300x300.png";
 import Vegas from "../assets/Rubyplay/507_300x300.png";
@@ -171,6 +172,14 @@ const netEntGames = [
 ];
 
 const Casino = () => {
+  const [searchText, setSearchText] = useState("");
+
+  const filterGames = (games) => {
+    if (!searchText.trim()) return games;
+    return games.filter((game) =>
+      game.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+  };
   return (
     <>
       <div className=" px-2 md:px-5 lg:px-10 mt-10 mb-10">
@@ -185,6 +194,8 @@ const Casino = () => {
                 type="text"
                 placeholder="Buscar"
                 className="w-full rounded-md outline-none bg-[#FCBD00] border-[#330e3c] border-2 px-3 py-1 text-[#330e3c] placeholder-[#590000]"
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
               />
             </div>
 
@@ -205,9 +216,12 @@ const Casino = () => {
           </div>
 
           {/* Categories */}
-          <GameCategory title="Pragmatic Play" games={pragmaticGames} />
-          <GameCategory title="Ruby Play" games={rubyPlayGames} />
-          <GameCategory title="NetEnt" games={netEntGames} />
+          <GameCategory
+            title="Pragmatic Play"
+            games={filterGames(pragmaticGames)}
+          />
+          <GameCategory title="Ruby Play" games={filterGames(rubyPlayGames)} />
+          <GameCategory title="NetEnt" games={filterGames(netEntGames)} />
         </div>
       </div>
     </>
