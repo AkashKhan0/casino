@@ -231,7 +231,7 @@ const Casino = () => {
   const [selectedProvider, setSelectedProvider] = useState("");
 
   const filterGames = (games) => {
-    return games.filter((game) => {
+    return games?.filter((game) => {
       const matchesSearch =
         !searchText.trim() ||
         game.name.toLowerCase().includes(searchText.toLowerCase());
