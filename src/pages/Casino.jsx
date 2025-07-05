@@ -32,46 +32,64 @@ const pragmaticGames = [
     id: 1,
     name: "Joker's Jewels",
     image: jokersjewel,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
   {
     id: 2,
     name: "Joker's Jewels Wild",
     image: jokerswild,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
   {
     id: 3,
     name: "Gold Party",
     image: goldparty,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
   {
     id: 4,
     name: "Joker's Jewels Cash",
     image: jokercash,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
   {
     id: 5,
     name: "5 Lions Megaways",
     image: vswayslions,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
   {
     id: 6,
     name: "Sugar Rush 1000",
     image: Sugarrush,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
   {
     id: 7,
     name: "Sweet Bonanza 1000",
     image: Sweet,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
   {
     id: 8,
     name: "Jokers Jewels Hot",
     image: JokersJewelsHot,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
   {
     id: 9,
     name: "Buffalo King Megaways",
     image: BuffaloKing,
+    category: "Slots",
+    provider: "Pragmatic Play",
   },
 ];
 
@@ -80,46 +98,64 @@ const rubyPlayGames = [
     id: 10,
     name: "Volcano Rising SE",
     image: VolcanoRising,
+    category: "Slots",
+    provider: "Ruby Play",
   },
   {
     id: 11,
     name: "Volcano Rising",
     image: VolcanoRising,
+    category: "Slots",
+    provider: "Ruby Play",
   },
   {
     id: 12,
     name: "Zeus Rush Fever Deluxe",
     image: ZeusRush,
+    category: "Slots",
+    provider: "Ruby Play",
   },
   {
     id: 13,
     name: "Vegas No Limit Wins",
     image: Vegas,
+    category: "Slots",
+    provider: "Ruby Play",
   },
   {
     id: 14,
     name: "Rush Fever 7s Deluxe",
     image: Rushfever,
+    category: "Slots",
+    provider: "Ruby Play",
   },
   {
     id: 15,
     name: "Mayan Cache",
     image: Mayancache,
+    category: "Slots",
+    provider: "Ruby Play",
   },
   {
     id: 16,
     name: "Stampede Rush Trident",
     image: Stampede,
+    category: "Slots",
+    provider: "Ruby Play",
   },
   {
     id: 17,
     name: "Shake Shake Money Tree",
     image: Shake,
+    category: "Slots",
+    provider: "Ruby Play",
   },
   {
     id: 18,
     name: "Madame Luck",
     image: Madame,
+    category: "Slots",
+    provider: "Ruby Play",
   },
 ];
 
@@ -128,57 +164,86 @@ const netEntGames = [
     id: 19,
     name: "Twin Spin Megaways",
     image: TwinSpin,
+    category: "Slots",
+    provider: "NetEnt",
   },
   {
     id: 20,
     name: "Fruit Shop Megaways",
     image: FruitShop,
+    category: "Slots",
+    provider: "NetEnt",
   },
   {
     id: 21,
     name: "Buster Bones",
     image: Buster,
+    category: "Slots",
+    provider: "NetEnt",
   },
   {
     id: 22,
     name: "Dazzle Me Megaways",
     image: DazzleMe,
+    category: "Slots",
+    provider: "NetEnt",
   },
   {
     id: 23,
     name: "Reel Rush",
     image: ReelRush,
+    category: "Slots",
+    provider: "NetEnt",
   },
   {
     id: 24,
     name: "Dead or Alive 2 Feature Buy",
     image: Dead,
+    category: "Slots",
+    provider: "NetEnt",
   },
   {
     id: 25,
     name: "Gonzo's Quest",
     image: Gonzo,
+    category: "Slots",
+    provider: "NetEnt",
   },
   {
     id: 26,
     name: "Roulette",
     image: Roulette,
+    category: "Live Casino",
+    provider: "NetEnt",
   },
   {
     id: 27,
     name: "Flowers Christmas Edition",
     image: Flowerschristmas,
+    category: "Slots",
+    provider: "NetEnt",
   },
 ];
 
 const Casino = () => {
   const [searchText, setSearchText] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedProvider, setSelectedProvider] = useState("");
 
   const filterGames = (games) => {
-    if (!searchText.trim()) return games;
-    return games.filter((game) =>
-      game.name.toLowerCase().includes(searchText.toLowerCase())
-    );
+    return games?.filter((game) => {
+      const matchesSearch =
+        !searchText.trim() ||
+        game.name.toLowerCase().includes(searchText.toLowerCase());
+
+      const matchesCategory =
+        !selectedCategory || game.category === selectedCategory;
+
+      const matchesProvider =
+        !selectedProvider || game.provider === selectedProvider;
+
+      return matchesSearch && matchesCategory && matchesProvider;
+    });
   };
   return (
     <>
@@ -201,13 +266,21 @@ const Casino = () => {
 
             <div className="w-full md:w-full lg:w-1/2 flex items-center justify-end gap-5">
               <div className="flex gap-4">
-                <select className="px-4 bg-[#FCBD00] outline-none py-2 rounded-lg text-[#330e3c] border-[#330e3c] border-2">
+                <select
+                  value={selectedCategory}
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                  className="px-4 bg-[#FCBD00] outline-none py-2 rounded-lg text-[#330e3c] border-[#330e3c] border-2"
+                >
                   <option>Categorías</option>
                   <option>Slots</option>
                   <option>Live Casino</option>
                 </select>
-                <select className="px-4 bg-[#FCBD00] outline-none py-2 rounded-lg text-[#330e3c] border-[#330e3c] border-2">
-                  <option>Proveedores</option>
+                <select
+                  value={selectedProvider}
+                  onChange={(e) => setSelectedProvider(e.target.value)}
+                  className="px-4 bg-[#FCBD00] outline-none py-2 rounded-lg text-[#330e3c] border-[#330e3c] border-2"
+                >
+                  <option>NetEnt</option>
                   <option>Pragmatic Play</option>
                   <option>Ruby Play</option>
                 </select>
