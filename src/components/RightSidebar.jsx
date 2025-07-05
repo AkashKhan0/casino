@@ -5,7 +5,7 @@ export default function RightSidebar() {
   const { bets, removeBet, totalOdds } = useBetSlip();
 
   return (
-    <aside className="w-full h-full bg-gray-800 p-4 flex flex-col">
+    <aside className="w-full h-full bg-[#0000006b] p-4 flex flex-col">
       <h2 className="text-md mb-4">BET SLIP</h2>
 
       <div className="flex-1 space-y-3 overflow-y-auto">

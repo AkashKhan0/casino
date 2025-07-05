@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap'); */
 
 
 @tailwind base;
@@ -9,7 +9,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Bangers", system-ui;
+  /* font-family: "Bangers", system-ui; */
   letter-spacing: 2px;
 }
 ::selection {
@@ -31,7 +31,7 @@ body {
 }
 .nav_text {
   color: #FFBC07;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 5px;
 }
@@ -229,7 +229,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   padding: 3px 25px;
   background: #FCBD00;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   color: #590000;
   border: 3px solid #590000;
@@ -370,7 +370,6 @@ input::-webkit-inner-spin-button {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
-
 .fil0 {
   fill: #fffdef;
 }

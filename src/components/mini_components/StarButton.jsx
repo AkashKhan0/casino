@@ -2,7 +2,7 @@ import React from "react";
 
 const StarButton = ({label = "Click Me" }) => {
   return (
-    <button className="star-button">
+    <div className="star-button w-fit">
       {label}
       {[1, 2, 3, 4, 5, 6].map((num) => (
         <div key={num} className={`star-${num}`}>
@@ -27,7 +27,7 @@ const StarButton = ({label = "Click Me" }) => {
           </svg>
         </div>
       ))}
-    </button>
+    </div>
   );
 };
 

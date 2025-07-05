@@ -13,15 +13,10 @@ import { FaFantasyFlightGames } from "react-icons/fa";
 const Features = () => {
   return (
     <div className="mb-10">
-      <div className="w-full h-[150px] relative overflow-hidden mb-5">
-        <video className="w-full h-auto" controls autoPlay muted loop>
-          <source src={text_vdo} type="video/mp4" />
-        </video>
-        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center bg-[#000] mix-blend-multiply">
-          <h1 className="text-9xl font-bold light_text" data-text="FUNCIONES">
+      <div className="w-full h-[150px] relative overflow-hidden my-5">
+          <h1 className="text-9xl font-bold light_text text-center">
             FUNCIONES
           </h1>
-        </div>
       </div>
 
       <div className=" px-2 md:px-5 lg:px-10">
