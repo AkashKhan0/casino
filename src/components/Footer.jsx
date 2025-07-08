@@ -1,9 +1,13 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import ftrbg from "../assets/ftr_bg.mp4";
+import ShinyText from "./mini_components/ShinyText";
 
 const Footer = () => {
+
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
   return (
     <div>
       <div className="w-full relative footer h-fit px-2 md:px-5 lg:px-10 py-5 bg-[#020202da]">
@@ -19,96 +23,83 @@ const Footer = () => {
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
-            <div className="f_ttl">Pages</div>
+            <div className="f_ttl">Paginas</div>
             <div className="f_ttl_p">
-              <Link to="/">Home</Link>
+              <Link to="/">Inicio</Link>
             </div>
             <div className="f_ttl_p">
-              <Link to="/poker">Poker</Link>
+              <Link to={isLoggedIn ? "/poker" : "/login"}>Poker</Link>
             </div>
             <div className="f_ttl_p">
-              <Link to="/Casino">Casino</Link>
+              <Link to={isLoggedIn ? "/casino" : "/login"}>Casino</Link>
             </div>
             <div className="f_ttl_p">
-              <Link to="/Livecasino">Live Casino</Link>
+              <Link to={isLoggedIn ? "/livecasino" : "/login"}>Casino en vivo</Link>
             </div>
             <div className="f_ttl_p">
-              <Link to="/Sports">Sports</Link>
+              <Link to={isLoggedIn ? "/sports" : "/login"}>Deportes</Link>
             </div>
             <div className="f_ttl_p">
-              <Link to="/features">Help</Link>
-            </div>
-          </div>
-          <div className="w-full flex flex-col items-center md:items-start lg:items-start">
-            <div className="f_ttl">Site Policies</div>
-            <div className="f_ttl_p">
-              <Link to="/moneylaundering">Against Money Laundering</Link>
-            </div>
-            <div className="f_ttl_p">
-              <Link to="/termcondition">Terms and Conditions</Link>
-            </div>
-            <div className="f_ttl_p">
-              <Link to="/privecypolicy">Privacy Policy</Link>
-            </div>
-            <div className="f_ttl_p">
-              <Link to="/validation">Validation and Acceptance of Bets</Link>
+              <Link to={isLoggedIn ? "/help" : "/login"}>Ayudas</Link>
             </div>
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
-            <div className="f_ttl">Additional Information</div>
+            <div className="f_ttl">Políticas del Sitio</div>
             <div className="f_ttl_p">
-              <Link to="/sportsrule">Sports Rules</Link>
+              <Link to="/moneylaundering">Contra el Lavado de Dinero</Link>
             </div>
             <div className="f_ttl_p">
-              <Link to="/gamerule">Game Rules</Link>
+              <Link to="/termcondition">Términos y Condiciones</Link>
             </div>
             <div className="f_ttl_p">
-              <Link to="/glossary">Betting Glossary</Link>
+              <Link to="/privecypolicy">Políticas de Privacidad</Link>
             </div>
             <div className="f_ttl_p">
-              <Link to="/responsiblegaming">Responsible Gaming</Link>
+              <Link to="/validation">Validación y Aceptación de Apuestas</Link>
             </div>
           </div>
           <div className="w-full flex flex-col items-center md:items-start lg:items-start">
-            <div className="f_ttl">Playbet</div>
+            <div className="f_ttl">Información Adicional</div>
+            <div className="f_ttl_p">
+              <Link to="/sportsrule">Reglas Deportivas</Link>
+            </div>
+            <div className="f_ttl_p">
+              <Link to="/gamerule">Reglas del Juego</Link>
+            </div>
+            <div className="f_ttl_p">
+              <Link to="/glossary">Glosario de Apuestas</Link>
+            </div>
+            <div className="f_ttl_p">
+              <Link to="/responsiblegaming">Juego Responsable</Link>
+            </div>
+          </div>
+          <div className="w-full flex flex-col items-center md:items-start lg:items-start">
+            <div className="f_ttl">Aguante</div>
 
             <div className="f_ttl_p">
-              <Link to="/whoweare">Who We Are</Link>
+              <Link to="/whoweare">Quiénes Somos</Link>
             </div>
           </div>
         </div>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-3">
           <div className="w-full flex flex-col items-center">
-            <div className="f_ttl2">Playbet</div>
+            <div className="f_ttl2">Aguante</div>
             <div className="f_ttl2_p text-center">
-              We are an official site for sports betting, slots, poker, and
-              online casino. Our platform follows strict security standards to
-              protect your data and provide a safe browsing experience. Enjoy
-              the best online gaming experience wherever and whenever you want.
-              Welcome to Play.bet.ar.
+              Somos un sitio oficial de apuestas deportivas, tragamonedas, poker y casino online. Nuestra plataforma cuenta con rigurosas normas de seguridad para proteger tus datos y brindarte una navegación confiable. Viví la mejor experiencia de juego online desde donde quieras y cuando quieras. Bienvenido a Play.bet.ar.
             </div>
           </div>
           <div className="w-full flex flex-col items-center">
-            <div className="f_ttl2">Compatible Wallet</div>
+            <div className="f_ttl2">Monedero Compatible</div>
             <div className="f_ttl2_p text-center">
-              We are an official site You can only play if you are an adult.
-              Gambling may cause pathological addiction. 18+
+              Podés jugar solo si eres adulto. El juego puede causar adicción patológica. 18+
             </div>
           </div>
         </div>
         <div className="w-full h-[1px] bg-[#fcbd0041] my-5"></div>
         <div className="w-full flex flex-col md:flex-row lg:flex-row items-center justify-between gap-2">
           <div className="social_icn flex gap-5">
-            <p className="f_ttl2_i">
-              <FaWhatsapp />
-            </p>
-            <p className="f_ttl2_i">
-              <FaFacebook />
-            </p>
-            <p className="f_ttl2_i">
-              <FaInstagram />
-            </p>
+            <ShinyText/>
           </div>
           <div className="copyrights f_ttl2_p text-center">
             © 2025 Aplus advertising LTD. All rights reserved.

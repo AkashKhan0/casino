@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import casinoData from "../assets/data/casinoData";
+import casinoData from "../assets/data/casino2";
 
-const Casino = () => {
+const Casino2 = () => {
   const categories = Object.keys(casinoData);
   const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -91,4 +91,4 @@ const Casino = () => {
   );
 };
 
-export default Casino;
+export default Casino2;

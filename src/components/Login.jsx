@@ -13,10 +13,11 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (username === "fahad" && password === "123456") {
+    if (username === "nicoplayer" && password === "s12345") {
       localStorage.setItem("isLoggedIn", "true");
-      localStorage.setItem("username", "fahad");
-      navigate("/"); // redirect to home
+      localStorage.setItem("username", "Nicoplayer");
+      navigate("/");
+      window.location.reload(); // redirect to home
     } else {
       alert("Invalid credentials");
     }
@@ -38,7 +39,7 @@ const Login = () => {
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
+                className="w-full py-1 outline-none bg-transparent placeholder-[#FCBD00]"
                 placeholder="Username..."
                 required
               />
@@ -50,14 +51,14 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password..."
-                className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
+                className="w-full py-1 outline-none bg-transparent placeholder-[#FCBD00]"
                 required
               />
               <div onClick={() => setShowPassword(!showPassword)}>
                 {showPassword ? (
-                  <BiHide className="cursor-pointer text-xl text-[#590000]" />
+                  <BiHide className="cursor-pointer text-xl text-[#FCBD00]" />
                 ) : (
-                  <BiShow className="cursor-pointer text-xl text-[#590000]" />
+                  <BiShow className="cursor-pointer text-xl text-[#FCBD00]" />
                 )}
               </div>
             </div>

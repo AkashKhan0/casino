@@ -20,7 +20,7 @@ const Signup = () => {
                   <div className="w-full border px-2  rounded-md form_inp">
                     <input
                       type="text"
-                      className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
+                      className="w-full py-1 outline-none bg-transparent placeholder-[#FCBD00]"
                       placeholder="Username..."
                       autoComplete="off" required
                     />
@@ -31,7 +31,7 @@ const Signup = () => {
                       type={showPassword ? "text" : "password"}
                       autoComplete="off"
                       placeholder="Password..."
-                      className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
+                      className="w-full py-1 outline-none bg-transparent placeholder-[#FCBD00]"
                     />
     
                     <div
@@ -39,9 +39,9 @@ const Signup = () => {
                       onClick={() => setShowPassword(!showPassword)}
                     >
                       {showPassword ? (
-                        <BiHide className="cursor-pointer text-xl text-[#330E3C]" />
+                        <BiHide className="cursor-pointer text-xl text-[#FCBD00]" />
                       ) : (
-                        <BiShow className="cursor-pointer text-xl text-[#330E3C]" />
+                        <BiShow className="cursor-pointer text-xl text-[#FCBD00]" />
                       )}
                     </div>
 
@@ -50,7 +50,7 @@ const Signup = () => {
                   <div className="w-full border px-2  rounded-md form_inp">
                     <input
                       type="text"
-                      className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
+                      className="w-full py-1 outline-none bg-transparent placeholder-[#FCBD00]"
                       placeholder="CUIL without spaces"
                       autoComplete="off" required
                     />
@@ -59,7 +59,7 @@ const Signup = () => {
                   <div className="w-full border px-2  rounded-md form_inp">
                     <input
                       type="number"
-                      className="w-full py-1 outline-none bg-transparent placeholder-[#590000]"
+                      className="w-full py-1 outline-none bg-transparent placeholder-[#FCBD00]"
                       placeholder="Your phone number"
                       autoComplete="off" required
                     />
