@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import StarButton from "./mini_components/StarButton";
 import { FaUserCircle } from "react-icons/fa";
 import Popupwllt from "./mini_components/Popupwllt";
+import Navbar2 from "./Navbar2";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -77,22 +78,44 @@ const Navbar = () => {
             {isLoggedIn && (
               <>
                 <div className="nav_text">
-                  <Link to="/livecasino">CASINO EN VIVO</Link>
+                  <Link to="/livecasino">CASINO EN DIRECTO</Link>
+                  <div className="nav_sub">
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">SALA A</Link></div>
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">SALA B</Link></div> 
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">SALA C</Link></div> 
+                  </div>
                 </div>
                 <div className="nav_text">
-                  <Link to="/casino">CASINO</Link>
+                  <Link to="/casino">Loteria y Bingo</Link>
+                  <div className="nav_sub">
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">SALA A</Link></div>
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">SALA B</Link></div>
+                  </div>
                 </div>
                 <div className="nav_text">
-                  <Link to="/bswgames">CASINO 2</Link>
+                  <Link to="/bswgames">SLOTS </Link>
+                  <div className="nav_sub">
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">Slots A</Link></div>
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">Slots B</Link></div> 
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">Slots C</Link></div> 
+                  </div>
                 </div>
                 <div className="nav_text">
                   <Link to="/sports">DEPORTES</Link>
+                   <div className="nav_sub">
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">Deportes A</Link></div>
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">Deportes B</Link></div>
+                  </div>
                 </div>
                 <div className="nav_text">
                   <Link to="/tvbet">TVBET</Link>
                 </div>
                 <div className="nav_text">
                   <Link to="/poker">POKER</Link>
+                  <div className="nav_sub">
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">Poker Online</Link></div>
+                    <div className="w-full py-2 hover:bg-[#ffbc07] hover:text-[#000] text-center"><Link to="/features">Poker vs. Banca</Link></div>
+                  </div>
                 </div>
                 <div className="nav_text_vip">
                   <button className="vip_button" onClick={handleClick}>
@@ -152,7 +175,7 @@ const Navbar = () => {
                   {showDropdown && (
                     <div
                       ref={dropdownRef}
-                      className="absolute top-12 right-0 bg-[#cd0000f1] text-black shadow-lg w-[150px] z-50"
+                      className="absolute top-[42px] right-0 bg-[#cd0000f1] text-black shadow-lg w-[150px] z-50"
                     >
                       <Link to="/profile">
                         <div className="w-full flex items-center justify-center py-1 hover:bg-[#590000] hover:text-[#FFBC07] text-white duration-300">
