@@ -129,7 +129,7 @@ const Navbar = () => {
               </>
             ) : (
               <>
-              <div className="flex flex-wrap gap-2 items-center">
+              <div className="flex flex-wrap gap-2 items-center justify-center md:justify-end lg:justify-end">
                 
                 <div className="nav_btn" onClick={() => setPopupwlltVisible(true)}>
                   <StarButton label="Billetera" />
