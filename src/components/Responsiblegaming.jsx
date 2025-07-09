@@ -1,64 +1,106 @@
-import React from 'react'
+import React from "react";
 
 const Responsiblegaming = () => {
   return (
     <div>
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto trmcndn">
-        <h1 className="grd_text py-5">EU RESPONSIBLE:</h1>
+        <h1 className="grd_text py-5">RESPONSABLE DE LA UE:</h1>
 
         <div className="pb-10">
           <div className="pvcplc_ttl">
-            <h1>TIPS FOR PLAYERS</h1>
+            <h1>CONSEJOS PARA LOS JUGADORES</h1>
           </div>
           <div className="pvcplc_ttl">
-            <h1>Game Manager</h1>
+            <h1>Gerente de Juegos</h1>
           </div>
           <div className="pvcplc_text">
             <p>
-              www.play.bet.ar adheres to the highest ethical standards. One of the fundamental pillars of www.play.bet.ar is providing fun for its players, and it takes every precaution to ensure that the element of fun prevails at all times. Therefore, each player has a restriction function page that allows them to set fixed limits on the amount they can gamble. The www.play.bet.ar staff will also make every effort to exclude minors and those who do not understand the responsibilities of online gambling.
+              www.play.bet.ar se adhiere al más alto nivel de estándares éticos.
+              Uno de los pilares fundamentales de www.play.bet.ar es brindar
+              diversión a sus jugadores y toma todas las precauciones necesarias
+              para garantizar que el elemento de diversión reine en todo
+              momento. Por lo tanto, cada jugador tiene una página de funciones
+              de restricción que les permite establecer límites fijos a la
+              cantidad que pueden jugar. El personal de www.play.bet.ar también
+              hará todo lo posible para excluir a los menores de edad y a
+              aquellos que no comprendan las responsabilidades del juego online.
             </p>
           </div>
 
           <div className="pvcplc_ttl">
-            <h1>Player Responsibility Checklist</h1>
+            <h1>Lista de verificación de responsabilidad del jugador</h1>
           </div>
           <div className="pvcplc_text">
             <p>
-              * You should only gamble for fun. If you're gambling to recoup losses, you're gambling for the wrong reason. * You should only gamble with money you've set aside for entertainment, not with money you need for basic expenses. Never gamble with borrowed money. * Gambling is not intended to damage your relationships with family and friends. If you notice it starting to bother you, you should stop.
+              * Sólo debes jugar por diversión. Si juegas para recuperar
+              pérdidas, estás jugando por el motivo equivocado. * Sólo debes
+              jugar con el dinero que has reservado para entretenimiento, no con
+              el dinero que necesitas para los gastos básicos. Nunca apuestes
+              con dinero prestado. * El juego no pretende dañar tu relación con
+              familiares y amigos. Si notas que empieza a molestarte, debes
+              parar.
             </p>
           </div>
 
           <div className="pvcplc_ttl">
-            <h1>Recognize your problem</h1>
+            <h1>Reconoce tu problema</h1>
           </div>
           <div className="pvcplc_text">
             <p>
-              * You have difficulty controlling the time and money you spend gambling. * You always think about gambling and find it hard to concentrate on anything else. * You are experiencing financial difficulties. * You neglect responsibilities such as family, work, or education because of gambling. * You borrow money to pay for gambling. * You lie to yourself about your gambling or hide it completely. * You talk to your family and friends about your gambling habits. * You view gambling as a way out of financial trouble. * You have lost interest in your usual hobbies, activities, or friends. * You constantly feel the need to gamble with larger amounts of money. If you agree with any of the above, it would be best to seek help. Here is a direct link to a recommended website that may help you deal with your addiction: www.gamblersanonymous.org
+              * Tienes dificultades para controlar el tiempo y el dinero que
+              gastas en juegos de azar. * Siempre piensas en el juego y te
+              cuesta concentrarte en cualquier otra cosa. * Está pasando por
+              dificultades financieras. * Descuidas responsabilidades como la
+              familia, el trabajo o la educación debido al juego. * Pides dinero
+              prestado para poder pagar el juego. * Mentirte sobre tus juegos de
+              azar u ocultarlos por completo. * Hablas con tu familia y amigos
+              sobre tus hábitos de juego. * Considera que el juego es una forma
+              de salir de los problemas financieros. * Has perdido interés en
+              tus aficiones, actividades o amigos habituales. * Sientes
+              constantemente la necesidad de jugar con mayores cantidades de
+              dinero. Si está de acuerdo con algo de lo anterior, lo mejor sería
+              que buscara ayuda. Aquí hay un enlace directo a un sitio web
+              recomendado que podría ayudarlo a lidiar con su adicción:
+              www.gamblersanonymous.org
             </p>
           </div>
 
           <div className="pvcplc_ttl">
-            <h1>Under 18s</h1>
+            <h1>Menores de 18 Años</h1>
           </div>
           <div className="pvcplc_text">
             <p>
-             The law prohibits minors under 18 from opening an account or gambling on the sites www.play.bet.ar. Minors caught gambling on these sites will lose their winnings and the incident may be reported to the authorities.
+              La ley prohíbe a menores de 18 años abrir una cuenta o jugar en
+              los sitios www.play.bet.ar. Los menores que sean descubiertos
+              jugando en estos sitios perderán sus ganancias y el incidente
+              podrá ser reportado a las autoridades
             </p>
           </div>
 
           <div className="pvcplc_ttl">
-            <h1>Usage Tips</h1>
+            <h1>Consejos de Uso</h1>
           </div>
           <div className="pvcplc_text">
             <p>
-              * www.play.bet.ar considers it its duty to ensure that www.play.bet.ar customers can enjoy it, being aware of the potential social and economic harm associated with gambling. * Gambling can be a pleasurable and exciting time, but it requires self-control. * By taking advantage of the capabilities of free online games, you will become accustomed to the graphics and sound effects and, in particular, learn the rules of the game. * Never bet more than you can afford. * Never gamble when you are tired or under the influence of alcohol. * Set a limit on your deposits or bets. * Once you have reached a profit, put some aside and play with the remaining money. * Do not go into debt to gamble.
+              * www.play.bet.ar considera que es su deber garantizar que los
+              clientes de www.play.bet.ar puedan disfrutarlo, siendo conscientes
+              de los posibles perjuicios sociales y económicos vinculados al
+              juego. * El juego puede ser un momento de diversión placentero y
+              emocionante, pero hay que ejercitar el autocontrol. * Aprovechando
+              las capacidades de los juegos online gratuitos, te acostumbrarás a
+              los efectos gráficos y sonoros y, en particular, aprenderás las
+              reglas del juego. * Nunca apuestes más de lo que puedes
+              permitirte. * Nunca juegues cuando estés cansado o bajo la
+              influencia del alcohol. * Establece un límite en tus depósitos o
+              apuestas. * Una vez que hayas alcanzado las ganancias, deja un
+              poco a un lado y juega con el dinero restante. * No te endeudes
+              para apostar.
             </p>
           </div>
-
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Responsiblegaming
+export default Responsiblegaming;
