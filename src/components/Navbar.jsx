@@ -14,18 +14,16 @@ const Navbar = () => {
   const dropdownRef = useRef(null);
 
   const [showPopup, setShowPopup] = useState(false);
-
   const [popupwlltVisible, setPopupwlltVisible] = useState(false);
 
   const handleClick = () => {
     setShowPopup(true);
     setTimeout(() => {
       setShowPopup(false);
-    }, 5000); // hide after 5s
+    }, 5000);
   };
 
   useEffect(() => {
-    // ✅ Login Status Check
     const loginStatus = localStorage.getItem("isLoggedIn") === "true";
     const savedUser = localStorage.getItem("username");
 
@@ -34,7 +32,6 @@ const Navbar = () => {
       setUsername(savedUser);
     }
 
-    // ✅ Handle Outside Click for Dropdown
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setShowDropdown(false);
@@ -43,7 +40,6 @@ const Navbar = () => {
 
     document.addEventListener("mousedown", handleClickOutside);
 
-    // ✅ Cleanup
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -57,18 +53,18 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="w-full h-auto navbar flex justify-center items-center">
-        <div className="px-2 md:px-5 lg:px-10 flex flex-col md:flex-row items-center justify-between w-full h-full gap-2">
-          <div className={`${isLoggedIn ? "hidden" : "w-full lg:w-[30%]"}`}>
+    <div className="relative w-full">
+      <div className="w-full h-auto navbar flex justify-center items-center py-2 px-4">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-4">
+          <div className={`${isLoggedIn ? "hidden" : "w-full lg:w-[30%] flex justify-center lg:justify-start"}`}>
             <Link to="/">
               <img src={logo} alt="Logo" className="w-auto h-[70px] min-h-10" />
             </Link>
           </div>
 
           <div
-            className={`w-full lg:w-[40%] flex flex-wrap items-center gap-2 ${
-              isLoggedIn ? "lg:w-[60%] py-5" : "lg:w-[40%]"
+            className={`w-full flex flex-wrap justify-center lg:justify-center items-center gap-3 ${
+              isLoggedIn ? "lg:w-[60%] py-2" : "lg:w-[40%]"
             }`}
           >
             <div className="nav_text">
@@ -105,9 +101,8 @@ const Navbar = () => {
                   </button>
                 </div>
                 {showPopup && (
-                  <div className=" absolute mt-4 p-4 bg-green-500 text-white rounded shadow">
-                    ⚠️ Para entrar al salón VIP, debes tener más de $1.000.000
-                    en saldo.
+                  <div className="absolute mt-4 p-4 bg-green-500 text-white rounded shadow">
+                    ⚠️ Para entrar al salón VIP, debes tener más de $1.000.000 en saldo.
                   </div>
                 )}
               </>
@@ -115,7 +110,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`w-full lg:w-[30%] flex items-center justify-center lg:justify-end gap-3 relative ${
+            className={`w-full flex justify-center lg:justify-end items-center gap-3 relative ${
               isLoggedIn ? "lg:w-[40%]" : "lg:w-[30%]"
             }`}
           >
@@ -134,6 +129,8 @@ const Navbar = () => {
               </>
             ) : (
               <>
+              <div className="flex flex-wrap gap-2 items-center">
+                
                 <div className="nav_btn" onClick={() => setPopupwlltVisible(true)}>
                   <StarButton label="Billetera" />
                 </div>
@@ -146,10 +143,8 @@ const Navbar = () => {
                     className="cursor-pointer flex items-center gap-2 text-white"
                     onClick={() => setShowDropdown(!showDropdown)}
                   >
-                    <span className="">
-                      {username.length > 10
-                        ? username.slice(0, 10) + ".."
-                        : username}
+                    <span>
+                      {username.length > 10 ? username.slice(0, 10) + ".." : username}
                     </span>
                     <FaUserCircle className="text-2xl" />
                   </div>
@@ -159,7 +154,7 @@ const Navbar = () => {
                       ref={dropdownRef}
                       className="absolute top-12 right-0 bg-[#cd0000f1] text-black shadow-lg w-[150px] z-50"
                     >
-                      <Link to="/profile" className="">
+                      <Link to="/profile">
                         <div className="w-full flex items-center justify-center py-1 hover:bg-[#590000] hover:text-[#FFBC07] text-white duration-300">
                           Profile
                         </div>
@@ -172,16 +167,14 @@ const Navbar = () => {
                     </div>
                   )}
                 </div>
+              </div>
               </>
             )}
           </div>
         </div>
       </div>
 
-      {/* Show Popupwllt Component */}
-      {popupwlltVisible && (
-        <Popupwllt onClose={() => setPopupwlltVisible(false)} />
-      )}
+      {popupwlltVisible && <Popupwllt onClose={() => setPopupwlltVisible(false)} />}
     </div>
   );
 };

@@ -91,18 +91,19 @@ const Footer = () => {
           </div>
           <div className="w-full flex flex-col items-center">
             <div className="f_ttl2">Monedero Compatible</div>
-            <div className="f_ttl2_p text-center">
+            <div className="f_ttl2_p text-center my-5">
               Podés jugar solo si eres adulto. El juego puede causar adicción patológica. 18+
             </div>
+            <div className="social_icn flex gap-5 mb-2">
+            <ShinyText/>
+          </div>
           </div>
         </div>
         <div className="w-full h-[1px] bg-[#fcbd0041] my-5"></div>
-        <div className="w-full flex flex-col md:flex-row lg:flex-row items-center justify-between gap-2">
-          <div className="social_icn flex gap-5">
-            <ShinyText/>
-          </div>
-          <div className="copyrights f_ttl2_p text-center">
-            © 2025 Aplus advertising LTD. All rights reserved.
+        <div className="w-full flex flex-col md:flex-row lg:flex-row items-center gap-2">
+          <div className="copyrights f_ttl2_p text-center w-full">
+            <p>© 2025 Aguante. All rights reserved</p>
+            <p className="text-[12px] mt-2"><a href="https://aplusadvertisinglimited.com/" target="_blank" rel="noopener noreferrer">A Plus advertising limited</a></p>
           </div>
         </div>
       </div>

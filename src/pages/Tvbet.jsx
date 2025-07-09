@@ -38,7 +38,7 @@ const Tvbet = () => {
       <div>
         <h2 className="text-xl md:text-2xl font-semibold text-[#FCBD00] mb-4">Bet on Games</h2>
         <div className="flex gap-4 flex-wrap mb-4">
-          {Object.keys(betOnGamesTabs).map((tab) => (
+          {Object.entries(betOnGamesTabs).map(([tab, items]) => (
             <button
               key={tab}
               className={`px-4 py-1 rounded-md text-sm font-medium border transition-all duration-200 bg-[#590000] ${
@@ -46,7 +46,7 @@ const Tvbet = () => {
               }`}
               onClick={() => setActiveTab(tab)}
             >
-              {tab}
+              {tab} ({items.length})
             </button>
           ))}
         </div>

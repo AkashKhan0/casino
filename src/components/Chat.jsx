@@ -43,7 +43,7 @@ const Chat = () => {
   return (
     <div>
       {/* Chat Icon */}
-      <div className="chat" onClick={() => setShowField(!showField)}>
+      <div className="chat w-[20px] md:w-[35px] lg:w-[50px] h-[20px] md:h-[35px] lg:h-[50px]" onClick={() => setShowField(!showField)}>
         <img src={chat} alt="" />
       </div>
 

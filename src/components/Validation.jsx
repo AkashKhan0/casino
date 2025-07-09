@@ -4,81 +4,33 @@ const Validation = () => {
   return (
     <div>
       <div className="px-2 md:px-5 lg:px-10 w-full h-auto trmcndn">
-        <h1 className="grd_text py-5">VALIDITY AND ACCEPTANCE OF BETS</h1>
+        <h1 className="grd_text py-5">VALIDEZ Y ACEPTACIÓN DE LAS APUESTAS</h1>
 
         <div className="pb-10">
           <div className="pvcplc_ttl">
-            <h1>Betting Management</h1>
+            <h1>Administración de las apuestas</h1>
           </div>
           <div className="pvcplc_text">
             <p>
-              Once confirmed, the bet cannot be modified or removed by the
-              Player. www.play.bet.ar reserves the right to reject or partially
-              accept the bet amount. www.play.bet.ar also reserves the right to
-              cancel a previously accepted bet before the event begins, without
-              explanation. In this case, the Player will be informed via the
-              messaging system. In the event of irregularities or decisions that
-              disrupt the regular progress of sporting events, www.play.bet.ar
-              reserves the right to declare the event "cancelled," even after it
-              has begun.
+              Una vez confirmada, la apuesta no puede ser modificada o eliminada por el Jugador. www.play.bet.ar se reserva el derecho de rechazar o aceptar parcialmente el monto apostado. www.play.bet.ar se reserva, además, el derecho de cancelar una apuesta anteriormente aceptada antes de que empiece el evento, sin explicación. En este caso el Jugador será informado a través de el sistema de mensajería. En caso de irregularidades o decisiones que alteran el regular desarrollo de los eventos deportivos, www.play.bet.ar se reserva el derecho de declarar el evento 'cancelado' incluso después de su inicio.
             </p>
           </div>
 
           <div className="pvcplc_ttl">
-            <h1>Validity of bets</h1>
+            <h1>Validez de las apuestas</h1>
           </div>
           <div className="pvcplc_text">
             <p>
-              The Player must check the bet before and after confirmation. The
-              bet will be valid only after a confirmation message is displayed
-              and the bet has been assigned an ID. All bets not confirmed before
-              the start of the first event in the pool will not be accepted.
-              Only bets present in the bet list of the Player's gaming account
-              will be considered valid. Complaints related to bets not correctly
-              registered in the database will not be considered.
+              El Jugador deberá controlar la apuesta antes y después de la confirmación, La apuesta será válida sólo después de la visualización de un mensaje de confirmación y cuando a la apuesta se le haya asociado un ID. Todas las apuestas no confirmadas antes del inicio del primer evento en la quiniela, no serán aceptadas. Solo las apuestas presentes en la lista de apuestas de la cuenta de juego del Jugador serán consideradas válidas. Quejas relacionadas a apuestas no correctamente registradas en la base de datos no serán tomadas en cuenta.
             </p>
           </div>
 
           <div className="pvcplc_ttl">
-            <h1>Types of bets</h1>
+            <h1>Tipos de apuestas</h1>
           </div>
           <div className="pvcplc_text">
             <p>
-              The Player has the ability to choose between different types of
-              bets and create personalized combinations. The types of bets
-              available at www.play.bet.ar are: Single bet: The Player places a
-              bet that includes a single predicted event. In this case, if the
-              prediction is correct, the Player will be the winner. Multiple
-              bets: The Player places a bet that includes more events. In this
-              case, if the prediction for all events is correct, the Player will
-              be the winner. Comprehensive bets: This consists of predicting
-              multiple events (with a minimum of two) in which it is possible to
-              select more than one odds for the same event. The system generates
-              more tickets, depending on the number of odds selected for the
-              same event, so that each bet appears only once on a ticket.
-              Example: If a Player bets: Lazio - Roma: 1 and 2 Milan - Inter: X
-              Torino - Juventus: X The system will generate two tickets:
-              Lazio-Roma 1; Milan-Inter X; Torino-Juventus X Lazio-Roma 2;
-              Milan-Inter X; Torino-Juventus X System: By selecting at least
-              three odds for three different events, the Player can create a
-              betting system. By selecting the 'System' option, located on the
-              coupon, it is possible to plan a system. It is not necessary to
-              predict and win all the bets placed; for example, by selecting
-              doubles combinations with 4 events, the Application generates 6
-              tickets in total, each consisting of 2 events; in this mode, the
-              Player has 6 chances of winning. The Player can decide the types
-              of combinations (single, double, treble, quadruple) and the amount
-              to bet on each type or the total amount. Additionally, by clicking
-              on the B button, they can set a base odds for the generated
-              system. This means that it will be present on each combination.
-              The Player can also combine events belonging to different sporting
-              categories, but in some cases, it is not possible to combine
-              different types of odds for the same event (for example, in the
-              Motors category). If, due to human or system error, the
-              Application accepts a system that includes two or more odds for
-              the categories in question, all related bets will be void (all
-              system odds will have a value of 1.0). The Application will
-              automatically refund any credits wagered by the Player.
+              El Jugador tiene la posibilidad de elegir entre diferentes tipos de apuestas y crear combinaciones personalizadas. Los tipos de apuestas disponibles en www.play.bet.ar son: Apuesta simple: el Jugador efectua una apuesta que incluye un solo evento previsto. En tal caso si se acierta el pronóstico, el Jugador saldrá ganador. Apuestas múltiples: el Jugador efectua una apuesta incluyendo más eventos. En tal caso si se acierta el pronóstico de todos los eventos, el Jugador saldrá ganador. Apuestas integrales: consiste en predecir eventos múltiples (con un mínimo de dos) en los cuales es posible seleccionar más cuotas para el mismo evento. El sistema produce más tiques, según el número de cuotas seleccionadas para el mismo evento de manera que cada apuesta aparezca una sola vez en un tique. Ejemplo Si un Jugador apuesta: Lazio - Roma: 1 and 2 Milan - Inter: X Torino - Juventus: X El sistema producirá dos tiques: Lazio-Roma 1; Milan-Inter X; Torino-Juventus X Lazio-Roma 2; Milan-Inter X; Torino-Juventus X Sistema: Seleccionando mínimo tres cuotas para tres eventos diferentes, el Jugador puede crear un sistema de apuestas. Seleccionando la opción 'Sistema', situado en el cupón, es posible planear un sistema. No es necesario prever y vencer todos los eventos apostados, por ejemplo, seleccionando combinaciones de dobles con 4 eventos, la Aplicación produce 6 tiques en total, cada tique está constituido por 2 eventos; el Jugador tiene, en este modo, 6 posibilidades de victoria. El Jugador puede decidir los tipos de combinaciones (simple, dobles, triples, cuádruples) y el monto que quiere apostar en cada tipo o el monto total. Además, haciendo clic en el botón B, él puede poner una cuota como base del sistema producido. Esto significa que será presente en cada combinación. El Jugador puede también combinar eventos que pertenecen a diferentes categorías deportivas, pero en unos casos, no es posible combinar diferentes tipos de cuotas para el mismo evento (por ejemplo en la categoría Motores). Si, por un error humano o del sistema, la Aplicación aceptara un sistema que incluye dos o más cuotas para las categorías en cuestión, todas las apuestas relativas vendrán canceladas (todas las cuotas del sistema tendrán valor 1.0). La Aplicación restituirá automáticamente los créditos apostados por el Jugador.
             </p>
           </div>
         </div>
